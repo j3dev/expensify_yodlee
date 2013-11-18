@@ -1,0 +1,53 @@
+<div class="row space-bot " id="create">
+	
+	<div class="c4 centered first ">
+		<h5 id="import" class="text-center"><a href="#create_transaction" ><span class="red">New</span> Import from Yodlee <span class="green">+</span></a></h5>
+		<div id="manualCreate" class="formBox">
+
+			<h3>Create Transaction</h3>
+
+			<form id="ctForm" class="vform ">
+
+				<label for="date">Date</label>
+				<input type="text" id="date" name="date" placeholder="mm/dd/yyyy"/>
+
+				<label for="merchant">Merchant</label>
+				<input type="text" id="merchant"  />
+
+				<label for="amount">Amount</label>
+				<input type="text" id="amount" />
+
+				<button id="create_transaction" class="skyblue ">Add</button>
+
+			</form>
+
+		</div>
+
+		<div id="yodleeImport" class="formBox">
+
+			<h3>Yodlee Login</h3>
+
+			<form class="vform ">
+				<input type="text" id="username" placeholder="username"/>
+				<input type="password" id="password" placeholder="password" />
+				<button id="yodlee_login" class="skyblue ">Login</button>
+			</form>
+
+		</div>
+
+		<div id="yodleeResults"></div>
+
+	</div>
+
+	
+</div>
+
+<div class="row space-bot">
+	<div id="lastTrans" class="c8 centered">
+	<h6> Entered Transaction</h6>
+		<table>
+			<tbody id="ltTable">
+			</tbody>
+		</table>
+	</div>
+</div>

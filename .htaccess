@@ -1,0 +1,9 @@
+Options +FollowSymLinks -MultiViews -Indexes
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^ %{REQUEST_URI}.php [L]
+
+# Block direct access to stored credentials
+<Files model.php> 
+    deny from all
+</Files>
