@@ -144,8 +144,8 @@ function last_transaction(list) {  // shows list of just imported transactions
 //////////
 /// Data
 /////////
-var api = '/expensify/controllers/expy';
-var yodlee = '/expensify/controllers/yodlee';
+var api = '/controllers/expy';
+var yodlee = '/controllers/yodlee';
 
 function get_transactions() {
 	
@@ -275,11 +275,14 @@ function yodlee_import(){
 	$.post(yodlee,params, function(trans){
 
 		results = 'Success, Saved Transaction ID\'s';
-		for(i = 0 ; i < trans.length; i++){
+		
+		$.each(trans, function(index, data){
+			data = $.parseJSON(data);
+			
+			results += '<br> ' + data.transactionID;
+		});
 
-			results += '<br> ' + trans[i].viewKey.transactionId;
-		}
-
+		
 		$('#create').hide();
 
 		msg(results, "success", 0);

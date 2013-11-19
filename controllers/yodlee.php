@@ -62,7 +62,7 @@ class YodleeCntrl{
 
 		}
 
-		echo json_encode($entries);
+		echo json_encode($results);
 	}
 
 	

@@ -28,7 +28,7 @@ $(document).ready(function(){
 	});
 
 	$(document).on('click', '#import', function(){
-
+		$('#msgArea').html('');
 		$('#manualCreate').hide();
 		$('#yodleeImport').fadeIn();
 	});
