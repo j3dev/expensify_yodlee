@@ -8,8 +8,8 @@
 class ExpyInterface{ 
 
 	private $auth =  array(
-		'partnerName' => 'applicant',
-		'partnerPassword' => 'd7c3119c6cdab02d68d9',
+		'partnerName' => 'PARTNERNAME',
+		'partnerPassword' => 'PASSWORD',
 		);
 
 	public $api_url = 'https://applicant.expensify.com/api' ;
@@ -37,8 +37,8 @@ class ExpyInterface{
 class YodleeInterface{
 
 	private $auth = array(
-		'cobrandLogin' 	  => 'sbCobj3dev',
-		'cobrandPassword' => 'e9981b78-a11a-4d21-bbf5-e1517e0dea23'
+		'cobrandLogin' 	  => 'COBLOGIN',
+		'cobrandPassword' => 'COBPASSWORD'
 		);
 
 
